@@ -1,0 +1,343 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+  <body
+    style="
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+    "
+  >
+    <div
+      class="container"
+      style="display: flex; flex-direction: row; gap: 50px"
+    >
+      <div
+        class="new"
+        style="
+          border-bottom: 2px solid black;
+          display: none;
+          flex-direction: row;
+          justify-content: center;
+          align-items: center;
+        "
+      >
+        <img
+          style="position: absolute; top: 26px; left: 290px"
+          width="30px"
+          height="30px"
+          src="assets/0025B806-FC62-48D8-B33B-EEF374DC8303.jpeg"
+          alt=""
+        />
+        <h3 class="menuu">Blogger</h3>
+      </div>
+      <div
+        style="
+          height: 720px;
+          border: 2px solid black;
+          padding: 20px;
+          display: flex;
+          flex-direction: column;
+          background-color: rgb(211, 210, 210);
+        "
+        class="old"
+      >
+        <div
+          class="logo"
+          style="
+            border-bottom: 2px solid black;
+            display: flex;
+            flex-direction: row;
+            justify-content: center;
+            align-items: center;
+            gap: 20px;
+          "
+        >
+          <img
+            width="30px"
+            height="30px"
+            src="assets/0025B806-FC62-48D8-B33B-EEF374DC8303.jpeg"
+            alt=""
+          />
+          <h3 class="menu">Blogger</h3>
+        </div>
+        <div
+          class="buttons"
+          style="
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            gap: 20px;
+          "
+        >
+          <button
+            style="
+              display: flex;
+              flex-direction: row;
+              margin-top: 60px;
+              justify-content: center;
+              align-items: center;
+              gap: 20px;
+              padding: 30px;
+              height: 30px;
+              box-shadow: -7px 7px 0px 0px black;
+            "
+          >
+            <img
+              width="30px"
+              height="30px"
+              src="assets/0025B806-FC62-48D8-B33B-EEF374DC8303.jpeg"
+              alt=""
+            />
+            <p>Add blogs</p>
+          </button>
+          <button
+            style="
+              display: flex;
+              flex-direction: row;
+              box-shadow: -7px 7px 0px 0px black;
+              justify-content: center;
+              align-items: center;
+              gap: 20px;
+              padding: 30px;
+              height: 30px;
+            "
+          >
+            <img
+              width="30px"
+              height="30px"
+              src="assets/0025B806-FC62-48D8-B33B-EEF374DC8303.jpeg"
+              alt=""
+            />
+            <p>Blog Lists</p>
+          </button>
+          <button
+            style="
+              display: flex;
+              flex-direction: row;
+              box-shadow: -7px 7px 0px 0px black;
+              justify-content: center;
+              align-items: center;
+              gap: 20px;
+              padding: 25px;
+              height: 30px;
+            "
+          >
+            <img
+              width="30px"
+              height="30px"
+              src="assets/0025B806-FC62-48D8-B33B-EEF374DC8303.jpeg"
+              alt=""
+            />
+            <p>Subscriptions</p>
+          </button>
+        </div>
+      </div>
+      <div
+        class="right"
+        style="display: flex; flex-direction: column; gap: 10px"
+      >
+        <div
+          class="admin"
+          style="
+            display: flex;
+            flex-direction: row;
+            align-items: center;
+            justify-content: space-around;
+            gap: 500px;
+            border-bottom: 2px solid black;
+          "
+        >
+          <p>Admin Panel</p>
+          <img
+            width="30px"
+            height="30px"
+            src="assets/0025B806-FC62-48D8-B33B-EEF374DC8303.jpeg"
+            alt=""
+          />
+        </div>
+        <div
+          class="inputs"
+          style="
+            gap: 20px;
+            display: flex;
+            flex-direction: row;
+            justify-content: center;
+            align-items: center;
+          "
+        >
+          <input
+            id="inp1"
+            style="padding: 10px; width: 300px"
+            type="text"
+            placeholder="Author name"
+          />
+          <input
+            id="inp2"
+            style="padding: 10px; width: 200px"
+            type="text"
+            placeholder="Text"
+          />
+          <input
+            id="inp3"
+            style="padding: 10px; width: 100px"
+            type="text"
+            placeholder="Text"
+          />
+          <input
+            id="inp4"
+            style="padding: 10px; width: 100px"
+            type="text"
+            placeholder="Text"
+          />
+        </div>
+        <div
+          style="display: flex; flex-direction: row; gap: 20px"
+          class="second_input"
+        >
+          <button
+            id="btn_add"
+            style="
+              padding: 10px;
+              background-color: black;
+              color: white;
+              border-radius: 10px;
+              border: none;
+              width: 80px;
+            "
+          >
+            Add
+          </button>
+          <button
+            id="clear"
+            style="
+              padding: 10px;
+              background-color: rgb(255, 255, 255);
+              color: rgb(0, 0, 0);
+              border-radius: 10px;
+              border: none;
+              width: 80px;
+              border: 1px solid black;
+            "
+          >
+            Clear
+          </button>
+        </div>
+        <p>All Blogs</p>
+        <div
+          class="child"
+          style="
+            display: flex;
+            flex-direction: column;
+            gap: 5px;
+            border: 1px solid black;
+          "
+        >
+          <div
+            style="
+              display: flex;
+              flex-direction: row;
+              gap: 88px;
+              padding-left: 15px;
+              border-bottom: 1px solid black;
+            "
+          >
+            <p class="ph"><b>photo</b></p>
+            <p class="surname"><b>Author Name</b></p>
+            <p class="comment"><b>Blog Title</b></p>
+            <p style="margin-left: 160px"><b>Date</b></p>
+            <p><b>Action</b></p>
+          </div>
+          <div class="first">
+            <!-- style="
+              display: flex;
+              flex-direction: row;
+              gap: 40px;
+              align-items: center;
+              padding-left: 15px;
+              border-bottom: 1px solid black;
+            "
+          >
+            <p><b>Alchiken Nurbi</b></p>
+            <p style="font-size: small">
+              Lorem ipsum dolor sit amet consectetur adipisicing elit.
+            </p>
+            <p style="margin-left: 20px">11 Jan 2025</p>
+            <p>x</p> -->
+          </div>
+        </div>
+      </div>
+    </div>
+    <script>
+      const menu = document.querySelector(".menu");
+      const old = document.querySelector(".old");
+      const neww = document.querySelector(".new");
+      const inp3 = document.querySelector("#inp3");
+      const inp4 = document.querySelector("#inp4");
+      const photos = {
+        "": "assets/0025B806-FC62-48D8-B33B-EEF374DC8303.jpeg",
+      };
+
+      menu.addEventListener("click", () => {
+        if (old.style.display !== "none") {
+          old.style.display = "none";
+          neww.style.display = "block";
+        }
+      });
+      neww.addEventListener("click", () => {
+        if (neww.style.display === "block") {
+          neww.style.display = "none";
+          old.style.display = "flex";
+        }
+      });
+
+      const btn_add = document.querySelector("#btn_add");
+      const inp1 = document.querySelector("#inp1");
+      const inp2 = document.querySelector("#inp2");
+      const surname = document.querySelector(".surname");
+      const comment = document.querySelector(".comment");
+
+      btn_add.addEventListener("click", () => {
+        const img = photos[""];
+        const box = document.createElement("div");
+        box.style = ` display: flex;
+              flex-direction: row;
+              gap: 40px;
+              align-items: center;
+              padding-left: 15px;
+              border-bottom: 1px solid black;`;
+
+        box.innerHTML = `
+                   <img style="width: 50px" src="${img}" alt="" />
+         <p><b>${inp1.value}</b></p>
+            <p style="font-size: small">
+              ${inp2.value}
+            </p>
+            <p style="margin-left: 20px">${inp3.value}</p>
+            <p>${inp4.value}</p>`;
+        document.querySelector(".child").appendChild(box);
+
+        inp1.value = "";
+        inp2.value = "";
+        inp3.value = "";
+        inp4.value = "";
+      });
+
+      const clear = document.querySelector("#clear");
+
+      clear.addEventListener("click", () => {
+        const childDiv = document.querySelector(".child");
+        const Last = childDiv.lastElementChild;
+        if (Last) {
+          Last.remove();
+        }
+      });
+    </script>
+  </body>
+</html>
